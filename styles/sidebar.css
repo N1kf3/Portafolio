@@ -1,0 +1,83 @@
+ion-icon {
+    pointer-events: none;
+  }
+
+
+
+.sidebar{
+    z-index: 10;
+    position: fixed;
+    right: 0px;
+    top: 25%;
+    text-align: right;
+    display: flex;
+    width: 5%;
+    flex-direction: column;
+}
+
+.icons{
+    font-size: 200%;
+}
+
+
+
+.sidebar-items{
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    text-align: center;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    
+ 
+    
+}
+
+.sidebar-link{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    
+
+}
+
+@keyframes sidebarAni{
+    from{
+        margin-left: 100%;
+        width: 100%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+@keyframes sidebarAniRev{
+   
+    from{
+        margin-left: 0%;
+        width: 100%;
+    } 
+    to{
+        margin-left: 100%;
+        width: 100%;
+    }
+}
+
+.sidebar-but{
+    height: 30px;
+   right: 0px;
+   width: 100%;
+   text-align: center;
+   
+    
+}
+
+.sidebar-but:hover , .sidebar-items:hover {
+    
+    cursor: pointer;
+    
+    
+}
